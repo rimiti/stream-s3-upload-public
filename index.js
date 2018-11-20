@@ -3,7 +3,7 @@ const fs  = require('fs');
 
 AWS.config.update({ accessKeyId: 'ACCESSKEYID', secretAccessKey: 'SECRETACCESSKEY', region: 'eu-west-3'});
 
-const fileStream = fs.createReadStream('/path/to/your/image.png');
+const fileStream = fs.createReadStream('girlfriend.jpg');
 
 fileStream.on('error', function (err) {
     if (err) { throw err; }
